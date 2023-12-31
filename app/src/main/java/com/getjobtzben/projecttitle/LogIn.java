@@ -64,7 +64,7 @@ public class LogIn extends AppCompatActivity {
                 password.requestFocus();
                 return;
             }
-            
+
             ProgressDialog dialog = new ProgressDialog(LogIn.this);
             dialog.setMessage("Please wait...");
             dialog.show();
