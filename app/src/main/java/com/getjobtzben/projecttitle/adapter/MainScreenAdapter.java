@@ -19,8 +19,8 @@ import com.getjobtzben.projecttitle.model.Project;
 import java.util.List;
 
 public class MainScreenAdapter extends RecyclerView.Adapter<MainScreenAdapter.ScreenViewHolder> {
-    private Context mContext;
-    private List<Project> mProjects;
+    private final Context mContext;
+    private final List<Project> mProjects;
 
     public MainScreenAdapter(Context mContext, List<Project> mProjects) {
         this.mContext = mContext;
