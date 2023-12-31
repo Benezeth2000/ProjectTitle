@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633191297808",
+    "project_id": "projecttitle-a6dd6",
+    "storage_bucket": "projecttitle-a6dd6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633191297808:android:0c426d86695660e14aeb95",
+        "android_client_info": {
+          "package_name": "com.getjobtzben.projecttitle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9x5iTHoH8RnJbP2QjyXrnCmtNJ_QzDAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

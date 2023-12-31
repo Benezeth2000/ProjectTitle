@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectDescription"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/project_images"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:background="@drawable/image"/>
+
+        <TextView
+            android:id="@+id/project_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:textColorHint="#F57C00"
+            android:hint="Project Price"/>
+
+        <TextView
+            android:id="@+id/project_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColorHint="#F57C00"
+            android:hint="Project Title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:background="@drawable/delete_edit_dashboard"
+            android:text="Buy Source Code"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:background="@drawable/delete_edit_dashboard"
+            android:text="Chat Us"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:hint="Project Description"/>
+
+        <TextView
+            android:id="@+id/project_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="normal"
+            android:textColorHint="#36312C"
+            android:background="@drawable/spinnerbackground"
+            android:hint="Project Description"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
