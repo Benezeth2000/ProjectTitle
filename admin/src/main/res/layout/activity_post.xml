@@ -32,6 +32,26 @@
         android:layout_marginEnd="@dimen/_10sdp"
         android:hint="project title"/>
 
+        <EditText
+            android:id="@+id/sourceCodePrice"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:textSize="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="source code price"/>
+
+        <EditText
+            android:id="@+id/custCodePrice"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:textSize="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="Custom source code price"/>
+
     <EditText
         android:id="@+id/projecDes"
         android:layout_width="@dimen/_300sdp"

@@ -50,6 +50,8 @@ public class Post extends AppCompatActivity {
 
     EditText projTitle;
     EditText projDesc;
+    EditText custCodePrice;
+    EditText sourceCodePrice;
     ImageView imageView;
     Button upload;
 
@@ -60,6 +62,8 @@ public class Post extends AppCompatActivity {
 
         projTitle = findViewById(R.id.projecTitle);
         projDesc = findViewById(R.id.projecDes);
+        sourceCodePrice = findViewById(R.id.sourceCodePrice);
+        custCodePrice = findViewById(R.id.custCodePrice);
         imageView = findViewById(R.id.ProjImages);
         progressBar = findViewById(R.id.progressBar);
         upload = findViewById(R.id.upload);
@@ -127,6 +131,8 @@ public class Post extends AppCompatActivity {
 
                                             String getProjTitle = projTitle.getText().toString().toLowerCase();
                                             String getProjDesc = projDesc.getText().toString().trim();
+                                            String codePrice = sourceCodePrice.getText().toString().trim();
+                                            String custCodePrice1 = custCodePrice.getText().toString().trim();
 
                                             if (getProjTitle.isEmpty()) {
                                                 projTitle.setError("Please, fill Title Name");
@@ -142,13 +148,19 @@ public class Post extends AppCompatActivity {
                                                 return;
                                             }
 
+                                            String uploadId = db.collection("ProjectTitle").document().getId();
+
                                             // Assuming 'databaseReference' is a reference to your Firestore collection
                                             Project newProject = new Project(
                                                     uri.toString(),
-                                                    getProjTitle
+                                                    getProjTitle,
+                                                    getProjDesc,
+                                                    codePrice,
+                                                    custCodePrice1,
+                                                    uploadId
                                             );
 
-                                            String uploadId = db.collection("ProjectTitle").document().getId();
+
                                             // Add the 'upload' object to Firestore collection
                                             // Add the product to Firestore
                                             projRef.document(uploadId).set(newProject)

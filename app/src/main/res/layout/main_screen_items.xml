@@ -28,6 +28,18 @@
             android:textColorHint="#F57C00"
             android:hint="Project Title"/>
 
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColorHint="#F57C00"
+            android:text="more"/>
+
     </LinearLayout>
 
 </LinearLayout>
